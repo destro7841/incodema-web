@@ -288,7 +288,7 @@
             left: 0;
         }
         
-        /* Machines Section - UPDATED */
+        /* Machines Section */
         .machines {
             background-color: #f8f9fa;
         }
@@ -352,6 +352,53 @@
             width: 40px;
             height: 3px;
             background: var(--secondary);
+        }
+        
+        /* Customer History Section */
+        .customers {
+            background-color: #f8f9fa;
+        }
+        
+        .customers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .customer-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+            padding: 25px 20px;
+        }
+        
+        .customer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .customer-logo {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .customer-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .customer-name {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
         }
         
         /* Gallery Section */
@@ -430,6 +477,11 @@
         .contact-details .contact-text h4 {
             margin-bottom: 5px;
             color: var(--primary);
+        }
+        
+        .contact-text .incodema-text {
+            color: var(--primary);
+            font-weight: 600;
         }
         
         .map-container {
@@ -603,7 +655,7 @@
                 height: 40px;
             }
             
-            .machines-grid {
+            .machines-grid, .customers-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -627,6 +679,7 @@
                     <li><a href="#about">Tentang Kami</a></li>
                     <li><a href="#products">Produk</a></li>
                     <li><a href="#machines">Mesin</a></li>
+                    <li><a href="#customers">Customer</a></li>
                     <li><a href="#gallery">Galeri</a></li>
                     <li><a href="#contact">Kontak</a></li>
                 </ul>
@@ -730,7 +783,7 @@
         </div>
     </section>
 
-    <!-- Machines Section - UPDATED -->
+    <!-- Machines Section -->
     <section id="machines" class="machines">
         <div class="container">
             <h2 class="section-title">Mesin Kami</h2>
@@ -753,7 +806,6 @@
                     </div>
                 </div>
                 
-                <!-- New Indoor Machine -->
                 <div class="machine-item">
                     <div class="machine-image">
                         <img src="images/indoor-machine.jpg" alt="Indoor Machine">
@@ -763,7 +815,6 @@
                     </div>
                 </div>
                 
-                <!-- New Diecut Machine -->
                 <div class="machine-item">
                     <div class="machine-image">
                         <img src="images/diecut-machine.jpg" alt="Diecut Machine">
@@ -789,6 +840,95 @@
                     <div class="machine-info">
                         <h3>Offset Machine</h3>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer History Section -->
+    <section id="customers" class="customers">
+        <div class="container">
+            <h2 class="section-title">Customer Kami</h2>
+            <p style="text-align: center; margin-bottom: 40px;">Kami telah dipercaya oleh berbagai perusahaan ternama di Indonesia</p>
+            <div class="customers-grid">
+                <!-- Customer 1 -->
+                <div class="customer-card">
+                    <div class="customer-logo">
+                        <img src="images/customer-1.jpg" alt="Hermina Group Medikaloka">
+                    </div>
+                    <div class="customer-name">Hermina Group Medikaloka</div>
+                </div>
+                
+                <!-- Customer 15 -->
+                <div class="customer-card">
+                    <div class="customer-logo">
+                        <img src="images/customer-2.jpg" alt="Siloam Group Mulia Pratama Cemerlang">
+                    </div>
+                    <div class="customer-name">Siloam Group Mulia Pratama Cemerlang</div>
+                </div>
+                
+                <!-- Customer 16 -->
+                <div class="customer-card">
+                    <div class="customer-logo">
+                        <img src="images/customer-3.jpg" alt="RSU Syubbanul Magelang">
+                    </div>
+                    <div class="customer-name">RSU Syubbanul Magelang</div>
+                </div>
+                
+                <!-- Customer 17 -->
+                <div class="customer-card">
+                    <div class="customer-logo">
+                        <img src="images/customer-4.jpg" alt="East Jakarta Medika">
+                    </div>
+                    <div class="customer-name">East Jakarta Medika</div>
+                </div>
+                
+                <!-- Customer 18 -->
+                <div class="customer-card">
+                    <div class="customer-logo">
+                        <img src="images/customer-5.jpg" alt="Lishar Sentosa Pratama">
+                    </div>
+                    <div class="customer-name">Lishar Sentosa Pratama</div>
+                </div>
+                
+                <!-- Customer 19 -->
+                <div class="customer-card">
+                    <div class="customer-logo">
+                        <img src="images/customer-6.jpg" alt="Garuda Yamato Steel">
+                    </div>
+                    <div class="customer-name">Garuda Yamato Steel</div>
+                </div>
+                
+                <!-- Customer 20 -->
+                <div class="customer-card">
+                    <div class="customer-logo">
+                        <img src="images/customer-7.jpg" alt="Sekolah PGM">
+                    </div>
+                    <div class="customer-name">Sekolah PGM</div>
+                </div>
+                
+                <!-- Customer 21 -->
+                <div class="customer-card">
+                    <div class="customer-logo">
+                        <img src="images/customer-8.jpg" alt="Bazar Bangunan">
+                    </div>
+                    <div class="customer-name">Bazar Bangunan</div>
+                </div>
+                
+                <!-- Customer 22 -->
+                <div class="customer-card">
+                    <div class="customer-logo">
+                        <img src="images/customer-9.jpg" alt="Honda Harapan Indah">
+                    </div>
+                    <div class="customer-name">Honda Harapan Indah</div>
+                </div>
+                
+                <!-- Customer 23 -->
+                <div class="customer-card">
+                    <div class="customer-logo">
+                        <img src="images/customer-10.jpg" alt="Toyoplas">
+                    </div>
+                    <div class="customer-name">Toyoplas</div>
                 </div>
             </div>
         </div>
@@ -829,7 +969,7 @@
                 <div class="contact-info">
                     <div class="logo-container" style="justify-content: flex-start; margin-bottom: 30px;">
                         <img src="images/logo.jpg" alt="INCODEMA Logo" class="logo-img">
-                        <div class="logo-text">INCODEMA <span>ASIA PRINTING</span></div>
+                        <div class="logo-text" style="color: var(--primary);">INCODEMA <span style="color: var(--secondary);">ASIA PRINTING</span></div>
                     </div>
                     
                     <ul class="contact-details">
@@ -851,14 +991,14 @@
                             <i class="fas fa-envelope"></i>
                             <div class="contact-text">
                                 <h4>Email</h4>
-                                <p>operation@incodemaasiaprinting.com</p>
+                                <p><span class="incodema-text">operation@incodemaasiaprinting.com</span></p>
                             </div>
                         </li>
                         <li>
                             <i class="fab fa-instagram"></i>
                             <div class="contact-text">
                                 <h4>Instagram</h4>
-                                <p>@SIPRINTING</p>
+                                <p><span class="incodema-text">@SIPRINTING</span></p>
                             </div>
                         </li>
                     </ul>
@@ -911,6 +1051,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">Tentang Kami</a></li>
                     <li><a href="#products">Produk</a></li>
+                    <li><a href="#customers">Customer</a></li>
                     <li><a href="#contact">Kontak</a></li>
                 </ul>
             </div>
